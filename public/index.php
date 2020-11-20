@@ -1,1 +1,1 @@
-<?php require_once '../vendor/autoload.php'; App\Startup::main();
+<?php if (!@include_once('../vendor/autoload.php')) echo "You must install package to start app.";

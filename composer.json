@@ -1,5 +1,6 @@
 {
     "name": "romainbourre/php_portfolio_subject",
+    "version": "0.0.0",
     "description": "An exercise to build portfolio project without framework!",
     "type": "project",
     "license": "MIT",
@@ -15,7 +16,6 @@
             "src/"
         ],
         "psr-4": {
-            "App\\":  "src/App"
         }
     },
     "require-dev": {
@@ -23,6 +23,7 @@
         "spatie/phpunit-watcher": "^1.23"
     },
     "require": {
-        "twig/twig": "^3.0"
+        "twig/twig": "^3.0",
+        "slim/psr7": "^1.2"
     }
 }
