@@ -120,10 +120,16 @@ You have limited package to build this part:
 - twig/twig ^3.0
 - slim/psr7 ^1.2
 
-You don't have to use those packages but **you must not add any production packages*. If you need packages, you only can add them as development packages (`composer install --dev <package>`).
+You don't have to use those packages but **you must not add any production packages**. If you need packages, you only can add them as development packages (`composer install --dev <package>`).
+
+**Warning:** if your application uses development packages to run, then they will not be available during code review!
 
 ### Database
 
 Your database must be a MySql database. It must be exposed on `localhost:3308` with user `root` and password `root`.
 
 I provide a dataset with file `data/data.sql`. You can edit this file and change data.
+
+### Design
+
+On this step, the design doesn't matter. Just use Bootstrap CDN.
